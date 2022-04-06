@@ -1,16 +1,24 @@
+/*
+padding-top:
+  1280 -> 56px; 1024 -> 48px; 720 -> 48px; 320 -> 48px;
+*/
+
 .section_type_lead {
   max-width: 984px;
+  padding-top: 56px;
 }
 
 @media screen and (max-width:1280px) {
   .section_type_lead {
     max-width: calc((100vw - 1024px) * (984 - 928) / (1280 - 1024) + 928px);
+    padding-top: calc((100vw - 1024px) * (56 - 48) / (1280 - 1024) + 48px);
   }
 }
 
 @media screen and (max-width:1024px) {
   .section_type_lead {
     max-width: calc((100vw - 768px) * (928 - 768) / (1024 - 768) + 768px);
+    padding-top: 48px;
   }
 }
 
