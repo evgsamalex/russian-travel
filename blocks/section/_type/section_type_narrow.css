@@ -1,9 +1,31 @@
 .section_type_narrow {
   max-width: 984px;
+  padding-top: 92px;
 }
 
 @media screen and (max-width:1280px) {
   .section_type_narrow {
     max-width: calc((100vw - 1024px) * (984 - 928) / (1280 - 1024) + 928px);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .section_type_narrow {
+    max-width: calc((100vw - 768px) * (928 - 720) / (1024 - 768) + 720px);
+    padding-top: calc((100vw - 768px) * (92 - 88) / (1024 - 768) + 88px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section_type_narrow {
+    max-width: calc((100vw - 320px) * (720 - 288) / (768 - 320) + 288px);
+    padding-top: calc((100vw - 320px) * (88 - 64) / (768 - 320) + 64px);
+  }
+}
+
+@media screen and (max-width:320px) {
+  .section_type_narrow {
+    max-width: 288px;
+    padding-top: 64px;
   }
 }

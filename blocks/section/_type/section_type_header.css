@@ -3,13 +3,13 @@
 }
 
 @media screen and (max-width:768px) {
-  .section {
+  .section_type_header {
     padding-top: calc((100vw - 320px) * (28 - 16) / (768 - 320) + 16px);
   }
 }
 
 @media screen and (max-width:320px) {
-  .section {
+  .section_type_header {
     padding-top: 16px;
   }
 }
