@@ -1,0 +1,29 @@
+.section_type_cover {
+  max-width: 1184px;
+  padding-top: 92px;
+}
+
+@media screen and (max-width:1280px) {
+  .section_type_cover {
+    max-width: calc((100vw - 1024px) * (1184 - 1024) / (1280 - 1024) + 1024px);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .section_type_cover {
+    max-width: 100%;
+    padding-top: calc((100vw - 768px) * (92 - 88) / (1024 - 768) + 88px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section_type_cover {
+    padding-top: calc((100vw - 320px) * (88 - 64) / (768 - 320) + 64px);
+  }
+}
+
+@media screen and (max-width:320px) {
+  .section_type_cover {
+    padding-top: 64px;
+  }
+}

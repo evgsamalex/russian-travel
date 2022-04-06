@@ -1,0 +1,14 @@
+.cover__background {
+  position: relative;
+  background-image: url(../../../images/blocks/cover/cover-trains.jpg);
+  background-size: cover;
+  padding-bottom: 62.5%;
+}
+
+/*
+Размеры на контрольных точках и соотношения сторон:
+1184х740 -> 740/1184 = 0.625
+1024х640 -> 640/1024 = 0.625
+768х480 -> 480/768 = 0.625
+320х200 -> 200/320 = 0.625
+*/

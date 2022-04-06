@@ -8,5 +8,6 @@
 @media screen and (max-width:550px) {
   .place__website {
     row-gap: 12px;
+    margin-left: calc((100vw - 320px) * (0 - 16) / (550 - 320) + 16px);
   }
 }

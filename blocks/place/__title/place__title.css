@@ -20,6 +20,12 @@
   }
 }
 
+@media screen and (max-width:550px) {
+  .place__title {
+    margin-left: calc((100vw - 320px) * (0 - 16) / (550 - 320) + 16px);
+  }
+}
+
 @media screen and (max-width:425px) {
   .place__title {
     font-size: 32px;
