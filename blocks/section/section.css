@@ -1,7 +1,41 @@
+/*
+width:
+  1280 -> 1184px 1024 -> 928px 768 -> 720px  320 -> 288px
+padding-top:
+  1280 -> 92px 1024 -> 92px 768 -> 88px  320 -> 64px
+*/
+
 .section {
   box-sizing: border-box;
   width: 100%;
-  min-width: 320px;
-  max-width: 1280px;
+  max-width: 1184px;
   margin: 0 auto;
+  padding-top: 92px;
+}
+
+@media screen and (max-width:1280px) {
+  .section {
+    max-width: calc((100vw - 1024px) * (1184 - 928) / (1280 - 1024) + 928px);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .section {
+    max-width: calc((100vw - 768px) * (928 - 720) / (1024 - 768) + 720px);
+    padding-top: calc((100vw - 768px) * (92 - 88) / (1024 - 768) + 88px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section {
+    max-width: calc((100vw - 320px) * (720 - 288) / (768 - 320) + 288px);
+    padding-top: calc((100vw - 320px) * (88 - 64) / (768 - 320) + 64px);
+  }
+}
+
+@media screen and (max-width:320px) {
+  .section {
+    max-width: 288px;
+    padding-top: 64px;
+  }
 }

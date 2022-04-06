@@ -8,8 +8,9 @@
 
 /*#region section*/
 @import url("../blocks/section/section.css");
-@import url("../blocks/section/_type/section_type_lead.css");
+@import url("../blocks/section/_type/section_type_narrow.css");
 @import url("../blocks/section/_type/section_type_header.css");
+@import url("../blocks/section/_type/section_type_lead.css");
 /*#endregion section*/
 
 /*#region header*/
@@ -26,3 +27,13 @@
 @import url("../blocks/lead/__subtitle/lead__subtitle.css");
 @import url("../blocks/lead/__title/lead__title.css");
 /*#endregion lead*/
+
+
+/*#region intro*/
+@import url("../blocks/intro/intro.css");
+@import url("../blocks/intro/__title/intro__title.css");
+@import url("../blocks/intro/__text/intro__text.css");
+@import url("../blocks/intro/__list/intro__list.css");
+@import url("../blocks/intro/__list-item/intro__list-item.css");
+@import url("../blocks/intro/__list-item/_type/intro__list-item_type_counter.css");
+/*#endregion intro*/
