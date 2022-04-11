@@ -10,6 +10,12 @@
 @media screen and (max-width:768px) {
   .place__paragraph {
     font-size: 16px;
-    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .place__paragraph {
+    margin-left: calc((100vw - 320px) * (0 - 16) / (550 - 320) + 16px);
+    margin-right: calc((100vw - 320px) * (0 - 16) / (550 - 320) + 16px);
   }
 }
